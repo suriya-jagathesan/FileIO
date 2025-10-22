@@ -8,9 +8,10 @@ import java.util.Arrays;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws IOException {
-        String path = "C:\\Users\\Suriya\\OneDrive\\Desktop\\test2\\test.txt";
+        System.out.println("Test");
+    /*    String path = "C:\\Users\\Suriya\\OneDrive\\Desktop\\test2\\test.txt";
         File file = new File(path);
-        System.out.println(file.exists());
+        System.out.println(file.exists() + "Added");
         // Either you can pass location or File as object
         //noinspection resource
 //        FileWriter fileWriter = new FileWriter(file,true);
@@ -51,6 +52,6 @@ public class Main {
 //                System.out.println(f.isDirectory() + " - " + f.getName());
 //            }
 //        }
-
+*/
     }
 }
