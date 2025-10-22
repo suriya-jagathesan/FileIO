@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         String path = "C:\\Users\\Suriya\\OneDrive\\Desktop\\test2\\test.txt";
         File file = new File(path);
-        System.out.println(file.exists());
+        System.out.println(file.exists() + "Added");
         // Either you can pass location or File as object
         //noinspection resource
 //        FileWriter fileWriter = new FileWriter(file,true);
