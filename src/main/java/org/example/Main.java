@@ -1,9 +1,6 @@
 package org.example;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
@@ -22,14 +19,22 @@ public class Main {
 //        fileWriter.close();
         // File Reader will read only character by Character
         FileReader fileReader = new FileReader(file);
-        int output = fileReader.read();
-        while( output != -1 ){
+//        int output = fileReader.read();
+//        while( output != -1 ){
+//
+//            System.out.print( (char)output );
+//            output = fileReader.read();
+//        }
 
-            System.out.print( (char)output );
-            output = fileReader.read();
+//        BufferedWriter bufferedWriter = new BufferedWriter( new FileWriter(file,true ));
+//        bufferedWriter.append("Singing");
+//        bufferedWriter.close();
+
+        BufferedReader bufferedReader = new BufferedReader( new FileReader(file) );
+        System.out.println(bufferedReader.readLine());
+        while( bufferedReader.readLine() != null ){
+            System.out.println( bufferedReader.readLine().length() );
         }
-
-
 //        if( !file.exists() ){
 //            file.createNewFile();
 //        }
